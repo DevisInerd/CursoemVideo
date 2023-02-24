@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMIGRAÇÃO</title>
+</head>
+<body>
+    <h1>Sistema de Imigração</h1>
+    Nome: <input type="text" name="txtnome" id="txtnome"><br>
+    <p>Idade: <input type="number" name="txtidade" id="txtidade"></p>
+    <p>Nacionalidade: <input type="text" name="txtnaci" id="txtnaci"></p>
+
+    <input type="button" value="Consultar" onclick="Verificar()">
+    <div id="est">
+
+    </div>
+    <script>
+        function Verificar() {
+            var txtn = window.document.querySelector('input#txtnome')
+            var year = window.document.querySelector('input#txtidade')
+            var naci = window.document.querySelector('input#txtnaci')
+            var est = window.document.querySelector('div#est')
+            var y = Number(txtyear.value)
+            
+            if (naci == 'Brasileiro') {
+                naci.innerHTML += `<p>Tenha uma excelente viagem Mr(a)<strong>${txtn}</strong> Obrigado por escolha a Azul.</p>`
+            } else {
+                naci.innerHTML += `<p>Mr(a)<strong>${txtn}</strong> Favor dirija - se a imigração.</p>`
+            }
+            
+        }
+    </script>    
+</body>
+</html>

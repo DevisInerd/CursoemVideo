@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS e Fontes Externas</title>
+    <style>
+      
+        body {
+            font-family: 'Arial, Helvetica, sans-serif';
+            /*Medidas Absolutas
+            cm, mm, in(polegada), px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            16px = 1em
+            */
+            font-size: 1em;
+            
+            /*lighter normal bold bolder*/
+        }
+        h1{
+            /*shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+            Esse
+            font-family: 'Work Sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-style: italic;
+            */
+            /*Ou Esse*/
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+        h2{
+            font: bold 2em 'Work Sans';
+        }
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci cum necessitatibus odio, nesciunt obcaecati quas modi, beatae tempora delectus omnis corporis similique nisi natus mollitia cupiditate sint blanditiis magnam praesentium?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque delectus, sapiente perferendis nesciunt reprehenderit enim facilis, ex nihil asperiores, temporibus aliquam consequatur provident iste? Nobis saepe dolorem similique delectus magnam?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi atque quia doloremque expedita explicabo veniam modi eum facilis, est tenetur, veritatis laboriosam quam officiis nobis amet sequi maiores quisquam optio.</p>
+    <h2>Subtítulo do Exercício</h2>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem nemo doloribus, hic modi saepe reiciendis cum fugit non numquam eligendi accusamus voluptas quia? Pariatur ullam unde asperiores repudiandae culpa rem?</p>
+</body>
+</html>
